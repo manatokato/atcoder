@@ -2,15 +2,15 @@ package AtCoderBeginnersSelection;
 import java.util.Scanner;
 
 public class ABC081A {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
         String s = sc.next();
 
         int count = 0;
 
-        for(int i = 0; i < s.length(); i++){
-            if(s.charAt(i) == '1'){
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '1') {
                 count++;
             }
         }

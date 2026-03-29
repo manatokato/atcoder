@@ -2,7 +2,7 @@ package AtCoderBeginnersSelection;
 import java.util.Scanner;
 
 public class ABC081B {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
@@ -10,26 +10,26 @@ public class ABC081B {
 
         int count = 0;
         
-        for(int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
         
-        while(true){
+        while (true) {
             boolean flg = true;
 
-            for (int i = 0; i < n; i++){
-                if(a[i] % 2 != 0){
+            for (int i = 0; i < n; i++) {
+                if (a[i] % 2 != 0) {
                     flg = false;
                     break;
                 }
             } 
 
-            if (!flg){
+            if (!flg) {
                 break;
             }
 
-            if (flg){
-                for (int i = 0; i < n; i++){
+            if (flg) {
+                for (int i = 0; i < n; i++) {
                     a[i] = a[i] / 2;
                 }
             }
